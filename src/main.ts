@@ -34,6 +34,8 @@ async function bootstrap() {
 
   logger.log(`Payments Microservices running in port ${envs.port}`);
 
+  console.log(`Health check: http://localhost:${envs.port}/api`);
+
   await app.listen(envs.port);
 }
 bootstrap();
